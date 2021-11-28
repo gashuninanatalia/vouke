@@ -1,11 +1,11 @@
 public class ThirdProgramm {
 
-    public static void main (String [] args) {
-      long multi = multiplication ( i: 13, i1: 5);
-        System.out.println("Умножение чисел" + 13 и 5 = " +multi);
+    public static void main(String[] args) {
+        long multi = multiplication(13, 5);
+        System.out.println("Умножение чисел 13 и 5 = " + multi);
 
-      double div = division ( i: 36, i1: 6);
-        System.out.println(" Деление чисел 36 и 6 = " +div);
+        double div = division(36, 6);
+        System.out.println("Деление чисел 36 и 6 = " + div);
     }
 
     private static long multiplication(int i, int i1) {
