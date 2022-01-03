@@ -14,9 +14,9 @@ public class SixthProgramm {
         System.out.println("Максимум в массиве: " + max);
     }
 
-        private static int getMax(int[] array) {
+    private static int getMax(int[] array) {
         int max = array[0];
-        for (int digit: array) {
+        for (int digit : array) {
             if (digit > max) {
                 max = digit;
             }
@@ -25,19 +25,19 @@ public class SixthProgramm {
     }
 
     private static int[] fillArray(int arrayLength) {
-        int [] digits = new int[arrayLength];
+        int[] digits = new int[arrayLength];
         for (int index = 0; index < arrayLength; index++) {
-            digits [index] = Math.round((float) Math.random() * 1000); // (0, 1000)
+            digits[index] = Math.round((float) Math.random() * 1000); // (0, 1000)
         }
         return digits;
     }
 
     private static int getArrayLength() {
-        Scanner scanner = new Scanner (System.in);
+        Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNext()) {
             System.out.println("Простите, но ввод значения подразумевает целое число");
             scanner.next();
         }
-         return scanner.nextInt();
+        return scanner.nextInt();
     }
 }
